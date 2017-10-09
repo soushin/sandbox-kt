@@ -2,6 +2,11 @@
 .gradle
 build/
 out/
+libs/
+cert/*
+
+src/main/grpc/
+src/main/java/soushin/sandbox/protobuf/
 
 # Ignore Gradle GUI config
 gradle-app.setting

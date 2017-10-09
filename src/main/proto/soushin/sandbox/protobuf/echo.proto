@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "soushin.sandbox.protobuf";
+option java_outer_classname = "EchoProto";
+option go_package = "soushin/sandbox";
+option objc_class_prefix = "SAND";
+
+package soushin.sandbox.protobuf;
+
+service Echo {
+    rpc GetEcho (EchoInbound) returns (EchoOutbound) {
+    }
+}
+
+message EchoInbound {
+    string message = 1;
+}
+
+message EchoOutbound {
+    string message = 1;
+}
+
